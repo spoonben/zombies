@@ -1,0 +1,39 @@
+{
+  "name": "zombies",
+  "version": "1.0.0",
+  "description": "Protect yourself against Zombies with JavaScript",
+  "main": "server.js",
+  "dependencies": {
+    "temporal": "^0.4.0",
+    "node-pre-gyp": "^0.6.7",
+    "johnny-five": "^0.8.76",
+    "rolling-spider": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+        "express": "~4.0.0",
+        "mongoose": "~3.6.13",
+        "body-parser": "~1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spoonben/zombies.git"
+  },
+  "keywords": [
+    "zombies",
+    "javascript",
+    "node",
+    "johny-five",
+    "rolling-spider"
+  ],
+  "author": "Ben Spoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spoonben/zombies/issues"
+  },
+  "homepage": "https://github.com/spoonben/zombies"
+}
