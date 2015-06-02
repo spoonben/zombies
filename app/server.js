@@ -1,9 +1,5 @@
 var express    = require('express');        
 var app        = express();                 
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;
 
@@ -20,9 +16,6 @@ router.route('/alert')
     	// alert that the zombies are here!
     	res.json({ message: 'INCOMING ZOMBIES' });
     });   
-
-
-// more routes for our API will happen here
 
 app.use('/api', router);
 
