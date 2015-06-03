@@ -4,5 +4,19 @@
 
 protecting yourself against the imminent zombie attack
 
-## Install 
+### install 
+```
+$ npm install
+```
 
+### grunt tasks
+
+eg:  
+
+```
+$ grunt [task] 
+```
+
+* **drone** - run just the drone demo
+
+* **server** - start the zombie server, default port is **8080**
