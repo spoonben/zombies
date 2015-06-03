@@ -4,7 +4,7 @@ module.exports = function(grunt) {
       execute: {
           drone: {
               src: ['scripts/drone.js']
-          }
+          },
           server: {
               src: ['scripts/server.js']
           }
