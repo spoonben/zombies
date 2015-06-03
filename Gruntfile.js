@@ -7,6 +7,9 @@ module.exports = function(grunt) {
           },
           server: {
               src: ['scripts/server.js']
+          },
+          button: {
+              src: ['scripts/button.js']
           }
       }
   });
@@ -14,5 +17,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('drone', ['execute:drone']);
   grunt.registerTask('server', ['execute:server']);
+  grunt.registerTask('button', ['execute:button']);
 
 };
