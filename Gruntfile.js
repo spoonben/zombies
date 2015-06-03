@@ -9,7 +9,7 @@ module.exports = function(grunt) {
               src: ['scripts/server.js']
           }
       }
-  })
+  });
   grunt.loadNpmTasks('grunt-execute');
 
   grunt.registerTask('drone', ['execute:drone']);
