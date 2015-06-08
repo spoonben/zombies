@@ -9,8 +9,7 @@ board.on("ready", function() {
   laser.on();
 
   detection.scale(0, 1).on("change", function() {
-    var reading = !(this.value | 0);
-
+    var reading = !(this.value > 0.9);
     if (isSecure !== reading) {
       isSecure = reading;
 
