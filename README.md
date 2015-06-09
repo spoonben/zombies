@@ -36,3 +36,12 @@ $ grunt [task]
 
 * **server** - start the zombie server, default port is **8080**
 
+
+
+### Links
+Here you'll find links to all the repos I've used
+
+* [https://github.com/rwaldron/johnny-five](https://github.com/rwaldron/johnny-five)
+* [https://expressjs.com](https://expressjs.com)
+* [https://github.com/voodootikigod/node-rolling-spider](https://github.com/voodootikigod/node-rolling-spider)
+* [https://github.com/andris9/Nodemailer](https://github.com/andris9/Nodemailer)
