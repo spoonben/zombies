@@ -2,6 +2,8 @@
 
 **under development**
 
+*Please keep in mind this repo was built as a demo, this is **not** a good application structure*
+
 [![bitHound Score](https://www.bithound.io/github/spoonben/zombies/badges/score.svg)](https://www.bithound.io/github/spoonben/zombies)
 
 protecting yourself against the imminent zombie attack
@@ -23,20 +25,6 @@ Settings should be saved in a file in the root directory called ```smtp-config.j
 ```
 
 I realize this is not secure, but it is at least easy to implement for now.
-
-### grunt tasks
-
-eg:  
-
-```
-$ grunt [task] 
-```
-
-* **drone** - run just the drone demo
-
-* **server** - start the zombie server, default port is **8080**
-
-
 
 ### Links
 Here you'll find links to all the repos I've used
