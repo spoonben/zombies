@@ -21,7 +21,7 @@ app.get('/listSensors', function (req, res) {
 });
 
 app.get('/sensorLocation/:unit_id', function (req, res) {
-    SensorList.find({ unit_id: req.param("unit_id") }, function(err, sensor) {
+    SensorList.find({ unit_id: req.param('unit_id') }, function(err, sensor) {
       if (err) throw err;
 
       // object of the user
@@ -30,8 +30,33 @@ app.get('/sensorLocation/:unit_id', function (req, res) {
   });
 });
 
-// app.get('/launchDrone', function (req, res) {
+app.get('/sendDrone/:location', function (req, res) {
+    var RollingSpider = require("rolling-spider"),
+            temporal    = require("temporal"),
+            drone = new RollingSpider();
 
-// });
+    drone.connect(function() {
+      drone.setup(function() {
+        temporal.queue([
+          {
+            delay: 0,
+            task: function () {
+              drone.flatTrim();
+              drone.startPing();
+              console.log('connected!');
+              drone.takeOff();
+            }
+          },
+          {
+            delay: 4000,
+            task: function() {
+               console.log('landing!');
+               drone.land();
+            }
+          }]);
+      });
+    });
+    res.send("Sending drone to " + req.param('location'));
+});
 
 app.listen(8080);
