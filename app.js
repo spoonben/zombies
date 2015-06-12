@@ -20,8 +20,8 @@ app.get('/listSensors', function (req, res) {
     });
 });
 
-app.get('/sensorLocation', function (req, res) {
-    SensorList.find({ unit_id: 1 }, function(err, sensor) {
+app.get('/sensorLocation/:unit_id', function (req, res) {
+    SensorList.find({ unit_id: req.param("unit_id") }, function(err, sensor) {
       if (err) throw err;
 
       // object of the user
@@ -29,5 +29,9 @@ app.get('/sensorLocation', function (req, res) {
       res.send(sensor[0].location);
   });
 });
+
+// app.get('/launchDrone', function (req, res) {
+
+// });
 
 app.listen(8080);
