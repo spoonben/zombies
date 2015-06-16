@@ -9,9 +9,21 @@
 protecting yourself against the imminent zombie attack
 (A collection of things to do with JavaScript)
 
-### install 
+### Example Scripts
+Example scripts are located in the ```example-scripts``` directory. 
+
+To run an example script, use node. e.g. ```node example-scripts/drone.js```
+
+### Database
+This experiment uses MongoDB for it's database. To find out more about MongoDB visit [their website](https://www.mongodb.org/)
+
+#### Schema
+The database script expects a schema to exist with a sensor in it. The schema is really simple: 
+
 ```
-$ npm install
+unit_id: Number,
+location: String,
+type: String
 ```
 
 ### SMTP
