@@ -1,6 +1,6 @@
 # zombies
 
-**under development**
+Slides for this presentaion are available at [slides.com/benspoon/zombies](http://slides.com/benspoon/zombies#/)
 
 *Please keep in mind this repo was built as a demo, this is **not** a good application structure*
 
