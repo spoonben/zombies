@@ -1,5 +1,5 @@
 # zombies
-
+![zombie logo](./zombie.jpg);
 **under development**
 
 *Please keep in mind this repo was built as a demo, this is **not** a good application structure*
