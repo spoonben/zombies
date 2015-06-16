@@ -2,6 +2,8 @@
 ![zombie logo](./zombie.jpg);
 **under development**
 
+Slides for this presentaion are available at [slides.com/benspoon/zombies](http://slides.com/benspoon/zombies#/)
+
 *Please keep in mind this repo was built as a demo, this is **not** a good application structure*
 
 [![bitHound Score](https://www.bithound.io/github/spoonben/zombies/badges/score.svg)](https://www.bithound.io/github/spoonben/zombies)
