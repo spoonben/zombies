@@ -10,15 +10,13 @@ drone.connect(function() {
         task: function () {
           drone.flatTrim();
           drone.startPing();
-          console.log('connected!');
           drone.takeOff();
         }
       },
       {
-        delay: 4000,
-        task: function() {
-           console.log('landing!');
-           drone.land();
+        delay: 500,
+        task: function () {
+          drone.land();
         }
       }]);
   });
