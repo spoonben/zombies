@@ -1,5 +1,5 @@
 # zombies
-![zombie logo](./zombie.png);
+![zombie logo](./zombie.png)
 
 Slides for this presentaion are available at [slides.com/benspoon/zombies](http://slides.com/benspoon/zombies#/)
 
